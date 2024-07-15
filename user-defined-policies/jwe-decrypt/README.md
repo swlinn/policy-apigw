@@ -44,7 +44,7 @@ https://www.ibm.com/docs/en/api-connect/10.0.1.x?topic=policies-apic-policiescre
         not exist, it will be created. The output payload will be written to the context message's .body property. The context
         message's headers.content-type will be set based upon the payload that is decrypted.
     - Key Encryption Algorithm:
-        This is a required properly. Select a key encryption algorithm to be used for the decryption.  Choose from the following:
+        This is a required property. Select a key encryption algorithm to be used for the decryption.  Choose from the following:
         - RSA1_5
         - RSA-OAEP
         - RSA-OAEP-256
@@ -52,7 +52,7 @@ https://www.ibm.com/docs/en/api-connect/10.0.1.x?topic=policies-apic-policiescre
         - A192KW
         - A256KW
     - Crypto Object:
-        This is a required properly. Specify the name of the DataPower Crypto object used to decrypt the message. Note that:
+        This is a required property. Specify the name of the DataPower Crypto object used to decrypt the message. Note that:
         - The Crypto Object referenced must be the associated Crypto Key (private key)
         - The private key file must be referenced by the Crypto Key object provided.
 
